@@ -1,0 +1,17 @@
+{
+  "name": "phishshield",
+  "version": "1.0.0",
+  "description": "Final Cpp",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Phish"
+  ],
+  "author": "PhishShield",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.0"
+  }
+}

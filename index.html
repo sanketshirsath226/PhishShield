@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="card.css">
+  
+  <title>My Website</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header con">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>P</span>hish <span>S</span>hield</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#phish" data-after="Service">Phishing?</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#projects" data-after="Projects">Methods</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero con">
+      <div>
+        <h1>Let's Be Safe Together, <span></span></h1>
+        <h1>BE AWARE & CONNECT WITH CARE. <span></span></h1>
+        <h1>PHISH SHIELD <span></span></h1>
+        <a href="#phish" type="button" class="cta">What is Phishing?</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Phish Section -->
+  <section id="phish">
+    <div class="phish con">
+      <div class="phish-top">
+        <h1 class="phish-title">What is Phishing<span>?</span></h1>
+        <p>Phishing is a type of online scam where criminals impersonate legitimate organizations via email, text message, advertisement or other means in order to steal sensitive information. This is usually done by including a link that will appear to take you to the company’s website to fill in your information – but the website is a clever fake and the information you provide goes straight to the crooks behind the scam.</p>
+      </div>
+      <div class="phish-sub-bottom">
+        <h1 class="phish-title">Phishing Techniques<span>:</span></h1>
+      </div>
+      <div class="phish-bottom">
+        <div class="phish-item">
+          <div class="icon"><img src="img/email_icon.png" /></div>
+          <h2>Email</h2>
+          <p>This technique is the most common, and often occurs when cybercriminals send emails with phishing URLs to try and obtain sensitive user information. According to a Forcepoint article, “an email may present with links that spoof legitimate URLs; manipulated links may feature subtle misspellings or use of a subdomain.” Once access is granted through these links, cybercriminals are able to successfully launch an attack.</p>
+        </div>
+        <div class="phish-item">
+          <div class="icon"><img src="img/text-messaging.png" /></div>
+          <h2>SMS / Text Message</h2>
+          <p>This technique is used by cybercriminals to send targeted text messages in an effort to trick these individuals into disclosing personal information. This is executed through a malicious link that redirects users to a phishing website and exposes their personal information to the attacker.
+          </p>
+        </div>
+        <div class="phish-item">
+          <div class="icon"><img src="img/web-based.png" /></div>
+          <h2>Web-Based Forgery</h2>
+          <p>This is one of the most sophisticated phishing techniques used by cybercriminals. According to the Phishing.org article, this technique is “also known as ‘man-in-the-middle,’ [where] the hacker is located in between the original website and the phishing system. The phisher traces details during a transaction between [a] legitimate website and the user. As the user continues to pass information, it is gathered by the phishers, without the user knowing about it.”
+          </p>
+        </div>
+        <div class="phish-item">
+          <div class="icon"><img src="img/malvertising.png" /></div>
+         <h2>Malvertising</h2>
+          <p>This technique involves malicious advertising including active scripts that have been created to download malware or force undesired content into victims’ networks. The most common and popular methods of malvertising includes Adobe PDFs and Flash. If you have seen these types of advertisements pop up on your browser, it is best to just steer clear.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services con">
+      <div class="service-top">
+        <h1 class="section-title">Found a phishing site<span>?</span></h1>
+        <p></p>
+      </div>
+      <div>
+        <div class="search">
+          <input type="text" id="searchtxt" placeholder="Url"/>
+          <div class="symbol">
+            <svg class="cloud">
+              <use xlink:href="#cloud" />
+            </svg>
+            <svg class="lens">
+              <use xlink:href="#lens" />
+            </svg>
+          </div>
+          </div>
+          
+        <!-- SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="cloud">
+            <path d="M31.714,25.543c3.335-2.17,4.27-6.612,2.084-9.922c-1.247-1.884-3.31-3.077-5.575-3.223h-0.021
+          C27.148,6.68,21.624,2.89,15.862,3.931c-3.308,0.597-6.134,2.715-7.618,5.708c-4.763,0.2-8.46,4.194-8.257,8.919
+          c0.202,4.726,4.227,8.392,8.991,8.192h4.873h13.934C27.784,26.751,30.252,26.54,31.714,25.543z" />
+          </symbol>
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="lens">
+            <path d="M15.656,13.692l-3.257-3.229c2.087-3.079,1.261-7.252-1.845-9.321c-3.106-2.068-7.315-1.25-9.402,1.83
+          s-1.261,7.252,1.845,9.32c1.123,0.748,2.446,1.146,3.799,1.142c1.273-0.016,2.515-0.39,3.583-1.076l3.257,3.229
+          c0.531,0.541,1.404,0.553,1.95,0.025c0.009-0.008,0.018-0.017,0.026-0.025C16.112,15.059,16.131,14.242,15.656,13.692z M2.845,6.631
+          c0.023-2.188,1.832-3.942,4.039-3.918c2.206,0.024,3.976,1.816,3.951,4.004c-0.023,2.171-1.805,3.918-3.995,3.918
+          C4.622,10.623,2.833,8.831,2.845,6.631L2.845,6.631z" />
+          </symbol>
+        </svg> 
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="img/stepicon.jpg" /></div>
+          <h2>Step 1 </h2>
+          <p>Firstly, Copy the url of suspicious website and paste it in the search bar.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="img/stepicon.jpg" /></div>
+          <h2>Step 2</h2>
+          <p>Click on Search Button to start the searching procedure</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="img/stepicon.jpg" /></div>
+          <h2>Step 3</h2>
+          <p>The Speed of detection depends above your internet speed. So your need to keep <span style="color: red;">Patience</span>.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="img/stepicon.jpg" /></div>
+          <h2>Step 4 </h2>
+          <p>The Result will be shown in pop up with a complete guide and preventation steps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects con">
+      <div class="projects-header">
+        <h1 class="section-title"><span>METHODS</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Method 1 </h1>
+            <h2>Blacklisting Method</h2>
+            <p></p>
+          </div>
+          <div class="project-img">
+            <img src="img/blacklisting.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Method 2</h1>
+            <h2>Popular Website Data</h2>
+            <p></p>
+          </div>
+          <div class="project-img">
+            <img src="img/popular website.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Method 3</h1>
+            <h2>APIs Request</h2>
+            <p></p>
+          </div>
+          <div class="project-img">
+            <img src="img/api.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Method 4</h1>
+            <h2>Machine Learning</h2>
+            <p></p>
+          </div>
+          <div class="project-img">
+            <img src="img/machine-learning.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about con">
+        <h1 class="section-title">About <span>US</span></h1>
+        <h2>Developer:</h2>
+        <div class="card-con">
+          <div class="card">
+            <img src="/img/sample.png" alt="" class="card__img"> 
+        
+            <!-- <div class="card__content">  -->
+            <div class="card__data">
+              <h1 class="card__title">Sarwesh Khairnar</h1>
+              <span class="card__preci">Developer</span>
+              <p class="card__description">Team Lead,Machine Learning Engineer,Backend Developer Software Tester</p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="card-con">
+          <div class="card">
+            <img src="/img/sample.png" alt="" class="card__img"> 
+        
+            <!-- <div class="card__content">  -->
+            <div class="card__data">
+              <h1 class="card__title">Atharava Raut</h1>
+              <span class="card__preci">Developer</span>
+              <p class="card__description">UI/UX Designer,System Design,Component Design</p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="card-con">
+          <div class="card">
+            <img src="/img/sample.png" alt="" class="card__img"> 
+        
+            <!-- <div class="card__content">  -->
+            <div class="card__data">
+              <h1 class="card__title">Viraj Sonawane</h1>
+              <span class="card__preci">Developer</span>
+              <p class="card__description">Desktop Developer,Web Developer,Researcher.</p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+        <div class="card-con">
+          <div class="card">
+            <img src="/img/sample.png" alt="" class="card__img"> 
+        
+            <!-- <div class="card__content">  -->
+            <div class="card__data">
+              <h1 class="card__title">Sanket Shirsath</h1>
+              <span class="card__preci">Developer</span>
+              <p class="card__description">Android Developer,Researcher,Database Backend Developer,Desktop Developer.</p>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+    </div>
+</section>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact con">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+         <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+919172464988</h2>
+            <h2>+918421250101</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>vansh0336@gmail.com</h2>
+            <h2>sarweshkhairnar@gmail.com</h2>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <img src="img/icon.png" style="position:absolute;margin-top:3%;margin-left:20%;width:10%; height:20%;">
+    <div class="footer con">
+      <div class="brand">
+        <h1><span>P</span>hish <span>S</span>hield</h1>
+      </div>
+      <h2>BE AWARE & CONNECT WITH CARE</h2>
+      <p>Copyright © 2021 Phish Shield. All rights reserved</p>
+    </div>
+  </section>
+  <div id="Error" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="icon-box">
+            <i class="material-icons">&#xE5CD;</i>
+          </div>				
+          <h4 class="modal-title">ERROR</h4>	
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>You have Entered a invalid url.Please Provide a proper url.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>     
+</div>
+<div id="Error" class="modal fade">
+  <div class="modal-dialog modal-confirm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="icon-box">
+          <i class="material-icons">&#xE5CD;</i>
+        </div>				
+        <h4 class="modal-title">ERROR</h4>	
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>You have Entered a invalid url.Please Provide a proper url.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>     
+</div>
+<div id="Success" class="modal fade">
+</div>
+<div id="Result" class="modal fade">
+  <div class="modal-dialog modal-confirm">
+    <div id="body_modal" class="modal-content">
+      <div class="modal-header">
+        <div class="icon-box" id="img">
+        </div>				
+        <h4 class="modal-title" id="title"></h4>	
+      </div>
+      <div class="modal-body">
+        <p id="msg"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info" data-dismiss="modal" onclick="location.href='#phish'">Read More</button>
+      </div>
+    </div>
+  </div>
+</div>     
+</div>
+  <!-- End Footer -->
+  <script src="./app.js"></script>  
+</body>
+</html>
