@@ -692,6 +692,11 @@ p {
 }
 #footer img{
 	object-fit:scale-down;
+	position:absolute;
+	margin-top:10%;
+	margin-left:13%;
+	width:10%; 
+	height:10%;
 }
 #footer .social-icon {
 	display: flex;
@@ -956,6 +961,15 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
+	#footer img
+	{
+		position:absolute;
+		margin-top:3%;
+		margin-left:20%;
+		width:10%; 
+		height:20%;
+	}
+
 	/* End contact  */
 }
 /* End Media Query For Tablet */
