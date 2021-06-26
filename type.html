@@ -1,0 +1,40 @@
+
+<!Doctype html>
+<html lang="en">
+<head>
+  <title>Login panel </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--- use bootstrap4 cdn --->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--- use font-awesome css --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--- use custom css --->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+   
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="offset-md-4 col-md-4">
+				<div class="login-circle text-center"><i class="fa fa-user-circle fa-5x"></i></div>
+				<div class="login-form">
+					<h2 class="text-white">REGISTER</h2>
+					<form method="POST" action="http://localhost/crypto-app/navinn.php">
+						<div class="form-group">
+							
+							<input type="username"  name="user" class="form-control1" placeholder="USERNAME" required><br>
+                            <input type="number"  name="phone" class="form-control1" placeholder="PHONE NUMBER" required><br>
+												
+                            <input type="password" name="passwd" class="form-control1" placeholder="PASSWORD"><br>
+                            <input type="password" name="cpasswd" class="form-control1" placeholder="CONFIRM-PASSWORD"><br>
+						</div>
+						<button type="submit text-right" name ="submit"  class="btn btn-hanger btn-block">REGISTER</button>
+
+    
+
+</body>
+</html>
