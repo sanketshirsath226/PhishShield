@@ -31,7 +31,7 @@ Step 1:
 
 Step 2:
 	Visit our website/download our android app. You can find our app directly from website too.
-	Website: https://sanketshirsath226.github.io/PhishShield/
+	Website: https://vrjvoid.github.io/PhishShield/
 	App: https://drive.google.com/file/d/1iy37nV55c9blj-eNr34p9lU5o315_m4M/view
 
 Step 3:
