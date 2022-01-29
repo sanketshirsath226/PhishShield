@@ -73,13 +73,13 @@ function detect_url(myUrl)
 	console.log("Entered Successfull");
 	$.ajax({
         type:"POST",
-        url:"https://phishsheild.herokuapp.com/post	",
+        url:"https://phishsheild.herokuapp.com/post",
         dataType:'json',
         data : 
         {
 			URL:myUrl
         },
-		complete: function(data)
+		success: function(data)
 		{
 			inputbartext.value="";
 			$("#Success").modal('hide');
