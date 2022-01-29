@@ -73,8 +73,8 @@ function detect_url(myUrl)
 	console.log("Entered Successfull");
 	$.ajax({
         type:"POST",
-        url:"https://phishsheild.herokuapp.com/post",
-        dataType:'json',
+        url:"https://phish-shield-ml.herokuapp.com/post",
+        dataType:'text',
         data : 
         {
 			URL:myUrl
@@ -83,8 +83,8 @@ function detect_url(myUrl)
 		{
 			inputbartext.value="";
 			$("#Success").modal('hide');
-			console.log(data['responseText'])
-			if(data['responseText']=="-1")
+			console.log(data)
+			if(data=="-1")
 			{
 				img.style.background="url(img/fail.png)";
 				img.style.backgroundRepeat="no-repeat";
@@ -93,7 +93,7 @@ function detect_url(myUrl)
 				messsage.innerHTML="The Url is detected as a Phishing Url.Please We Request not to Visit the Url.For More Information Click Read More."
 				$("#Result").modal('show');
 			}
-			else if(data['responseText']=="0")
+			else if(data=="1")
 			{
 				img.style.background="url(img/success.png)";
 				img.style.backgroundRepeat="no-repeat";
